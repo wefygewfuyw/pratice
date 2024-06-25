@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    @keyframes fadeIn {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        
+        @keyframes slideIn {
+            0% { transform: translateX(-100px); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(100px); }
+        }
+        @keyframes hackerText {
+            0% { opacity: 0.1; }
+            10% { opacity: 1; transform: scale(1.1); }
+            20% { opacity: 0.1; }
+            30% { opacity: 1; transform: scale(1); }
+            40% { opacity: 0.1; }
+            50% { opacity: 1; transform: scale(1.1); }
+            60% { opacity: 0.1; }
+            70% { opacity: 1; transform: scale(1); }
+            80% { opacity: 0.1; }
+            90% { opacity: 1; transform: scale(1.1); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0, 0); }
+            20% { transform: translate(-3px, 3px); }
+            40% { transform: translate(-3px, -3px); }
+            60% { transform: translate(3px, 3px); }
+            80% { transform: translate(3px, -3px); }
+            100% { transform: translate(0, 0); }
+        }
+</style>
+<body style="background-color: aqua; display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;">
+    <div>
+        <h1 style="text-align: center; color: black; 
+                    font-size: 3em; 
+                    text-align: center; 
+                    animation: hackerText 1.5s infinite, glitch 0.5s infinite;
+    "">I am a Hacker!!</h1>
+        <p style="text-align: center; font-size: 50px;font-weight: 100;
+                    font-size: 1.5em; 
+                    color: #333; 
+                    animation: fadeIn 3s ease-in-out infinite, slideIn 3s ease-in-out infinite;
+    "">My name is K Sai Karthik</p>
+    </div>
+   
+</body>
+</html>
