@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome</title>
+    <style>
+        body{
+            background-color: pink;
+            text-align: center;
+
+        }
+        p{
+            color: red;
+            font-size: 20px;
+        }
+        button{
+            border-radius: 30ppx;
+            color: red;
+            background-color: yellow;
+            cursor: pointer;
+            border-color: solid 2px black;
+       }
+       .animation{
+        animation: fadeIn 3s ease-in-out infinite, slideIn 3s ease-in-out infinite;
+       }
+       @keyframes fadeIn {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        
+        @keyframes slideIn {
+            0% { transform: translateX(-100px); }
+            50% { transform: translateX(0); }
+            100% { transform: translateX(100px); }
+        }
+        .animation p{
+            font-style: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h3>Launchpad Program</h3>
+    <p>Know your career with launchpad with exiting courses.</p>
+    <button>Java Full Stack</button>
+    <button>Software Testing</button>
+    <button>Python Developer</button>
+    <p class="animation">place your pointer on the above button</p>
+</body>
+</html>
